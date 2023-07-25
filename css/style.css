@@ -1,0 +1,81 @@
+*{
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin: 10px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 90vh;
+}
+.card{
+    width: 100px;
+    height: 90vh;
+    flex: 1;
+    background-position-x: center;
+    position: relative;
+    background-size: cover;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: 5px;
+    background-repeat: no-repeat;
+    transition: all .8s linear;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s linear;
+    -ms-transition: all .8s linear;
+    -o-transition: all .8s linear;
+}
+h3{
+    font-size: 25px;
+    margin: 10px;
+    position: absolute;
+    color: #fff;
+}
+.active{
+    flex: 6;
+}
+.active h3{
+    color: #111;
+    top: 0;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+
+}
+.cairo{
+    background-image: url('../img/Cairo-600x400.jpg');
+}
+.sphinx{
+    background-image: url('../img/great-sphinx4.jpg');
+}
+.aswan{
+    background-image: url('../img/Aswan.jpg');
+}
+.luxor{
+    background-image: url('../img/Luxor-768x575.jpg');
+}
+.hurghada{
+    background-image: url('../img/hurghada-tourism.jpg');
+}
+@media(max-width:480px){
+    .sphinx , .aswan{
+        display: none;
+    }
+}
+
