@@ -1,12 +1,12 @@
 const cards = document.querySelectorAll('.card');
-const removective = ()=>{
+const removeActive = ()=>{
     cards.forEach(card =>{
         card.classList.remove('active');
     })
 }
 cards.forEach(card=>{
     card.addEventListener('mouseenter', ()=>{
-        removective();
-        card.classList.add('active');
+        removeActive();
+    card.classList.add('active');
     })
 })

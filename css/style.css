@@ -56,7 +56,6 @@ h3{
     -moz-transition: 1.5s;
     -ms-transition: 1.5s;
     -o-transition: 1.5s;
-
 }
 .cairo{
     background-image: url('../img/Cairo-600x400.jpg');
@@ -73,9 +72,13 @@ h3{
 .hurghada{
     background-image: url('../img/hurghada-tourism.jpg');
 }
-@media(max-width:480px){
-    .sphinx , .aswan{
-        display: none;
+@media(max-width:760px){
+    .container{
+        flex-direction: column;
+        height: 90vh;
+    }
+    .card{
+        width: 90%;
     }
 }
 
